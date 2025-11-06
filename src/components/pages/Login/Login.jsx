@@ -1,4 +1,4 @@
-import Logo from '../../../assets/logo.svg'
+import Logo from '../../../assets/Logo.svg'
 import Avatar from '../../../assets/Avatar.svg'
 import inputlogo from '../../../assets/input-logo.svg'
 import Email from '../../../assets/Email.svg'
