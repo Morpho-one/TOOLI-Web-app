@@ -51,14 +51,14 @@ function login({ onSignupClick }) {
 
     <div className="flex justify-center items-center mt-10 space-x-16">
 
-      <div className="h-auto w-[600px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-lg p-8 justify-items-center">
+      <div className="h-auto w-[450px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-lg p-8 justify-items-center">
 
 <img className='w-65 h-35' src={inputlogo}></img>
 
 <h2 className="ml-2 relative -top-3 text-[#38afa4] font-bold text-lg ">Medical Document Upload</h2>
 
-<div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-full bg-white">
-  <img src={Email} alt="Email Icon" className="w-[44px] h-[44px] mr-2 opacity-70" />
+<div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-11/12 bg-white">
+  <img src={Email} alt="Email Icon" className="w-[22px] h-[22px] mr-2 opacity-70" />
    <input
     type="text"
     placeholder="Email Address"
@@ -66,11 +66,11 @@ function login({ onSignupClick }) {
   />
 </div>
 
-<div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-full mt-4 bg-white">
+<div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-11/12 mt-4 bg-white">
   <img
     src={Password}
     alt="Password Icon"
-    className="w-[44px] h-[44px] mr-2 opacity-70"
+    className="w-[22px] h-[22px] mr-2 opacity-70"
   />
   <input
     type="password"
@@ -80,7 +80,7 @@ function login({ onSignupClick }) {
 </div>
 
 {/* Remember Me + Forgot Password Row */}
-<div className="flex items-center justify-between mt-3 w-full">
+<div className="flex items-center justify-between mt-3 w-full ml-8">
   {/* Left: Remember Me */}
   <div className="flex items-center">
     <input
@@ -108,7 +108,7 @@ function login({ onSignupClick }) {
   </a>
 </div>
 
-<div className="flex items-center justify-between border border-[#d5d7da] rounded-lg p-3 mt-4 w-1/2 relative right-34 bg-white">
+<div className="flex items-center justify-between border border-[#d5d7da] rounded-lg p-3 mt-4 w-1/2 relative right-22 bg-white">
   <div className="flex items-center">
     <input
       id="not-robot"
@@ -131,7 +131,7 @@ function login({ onSignupClick }) {
 
 
 <button
-  className="w-[550px] h-[86px] bg-[#c1b4f8] text-white font-semibold text-xl rounded-xl mt-6 hover:bg-[#b3a2f4] transition-all duration-200 shadow-md relative right-2"
+  className="w-full h-[86px] bg-[#c1b4f8] text-white font-semibold text-xl rounded-xl mt-6 hover:bg-[#b3a2f4] transition-all duration-200 shadow-md relative right-0"
 >
   Sign In
 </button>
