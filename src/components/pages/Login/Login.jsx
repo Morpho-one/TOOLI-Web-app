@@ -14,7 +14,7 @@ function login({ onSignupClick }) {
 
         <>
 
-        <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#e3c8fb_0%,_#d8b7f9_40%,_#c6a4f7_60%)] m-0 p-0">
+        <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#e9cff1_0%,_#e8cef0_100%)] m-0 p-0">
  {/* Top Navigation Bar */}
       <div className="flex justify-between items-center px-8 py-6">
 
@@ -41,7 +41,7 @@ function login({ onSignupClick }) {
           <button 
           
           onClick={onSignupClick}
-          className="bg-gradient-to-r from-[#3b82f6] to-[#2563eb] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
+          className="bg-gradient-to-r from-[#816df5] to-[#816df5] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
             Sign Up
           </button>
         </div>
@@ -87,7 +87,9 @@ function login({ onSignupClick }) {
       id="remember-me"
       name="remember-me"
       type="checkbox"
-      className="h-[22px] w-[22px] rounded border-gray-300 text-[#38afa4] focus:ring-[#38afa4]"
+      className="h-[22px] w-[22px] rounded border-gray-300 bg-[#c5b7f6] appearance-none cursor-pointer 
+                 relative checked:before:content-['✓'] checked:before:absolute checked:before:top-[-2px] checked:before:left-[4px] 
+                 checked:before:text-white checked:before:text-[18px] checked:before:font-bold"
     />
     <label
       htmlFor="remember-me"
@@ -100,7 +102,7 @@ function login({ onSignupClick }) {
   {/* Right: Forgot Password */}
   <a
     href="#"
-    className="text-sm font-medium text-[#38afa4] hover:text-[#2e9689] transition"
+    className="text-sm font-medium text-[#000] hover:text-[#2e9689] transition"
   >
     Forgot Password?
   </a>
