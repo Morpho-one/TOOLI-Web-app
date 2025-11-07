@@ -42,7 +42,7 @@ function Signup() {
         {/* Main Signup Box */}
         <div className="flex justify-start items-center mt-10 space-x-16 ml-10">
           
-          <div className="h-auto w-[600px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-lg p-8 flex flex-col gap-4">
+          <div className="h-auto w-[680px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-lg p-8 flex flex-col gap-4">
 
             
 
@@ -148,10 +148,127 @@ function Signup() {
              
             </div>
 
+            <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-1/2 bg-white">
+                <input
+                  type="text"
+                  placeholder="Country"
+                  className="w-full outline-none bg-transparent placeholder-gray-400"
+                />
+              </div>
+
             
+              <h2 className="font-semibold text-xl">Account Security</h2>
+
+
+              
+             <div className="flex flex-row gap-3">
+              <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-1/2 bg-white">
+                <input
+                  type="text"
+                  placeholder="Password"
+                  className="w-full outline-none bg-transparent placeholder-gray-400"
+                />
+              </div>
+
+               <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-1/2 bg-white">
+                <input
+                  type="text"
+                  placeholder="Confirm Password"
+                  className="w-full outline-none bg-transparent placeholder-gray-400"
+                />
+              </div>
+
              
+            </div>
 
 
+             <h2 className="font-semibold text-xl">Key Contacts</h2>
+
+              <div className="flex flex-row gap-3">
+              <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-1/2 bg-white">
+                <input
+                  type="text"
+                  placeholder="Practice Manager Name"
+                  className="w-full outline-none bg-transparent placeholder-gray-400"
+                />
+              </div>
+
+               <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-1/2 bg-white">
+                <input
+                  type="text"
+                  placeholder="Practice Manager Email"
+                  className="w-full outline-none bg-transparent placeholder-gray-400"
+                />
+              </div>
+
+             
+            </div>
+
+
+            <div className="flex flex-row gap-3">
+              <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-1/2 bg-white">
+                <input
+                  type="text"
+                  placeholder="IT Support Team Name"
+                  className="w-full outline-none bg-transparent placeholder-gray-400"
+                />
+              </div>
+
+               <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-1/2 bg-white">
+                <input
+                  type="text"
+                  placeholder="IT Support Team Email"
+                  className="w-full outline-none bg-transparent placeholder-gray-400"
+                />
+              </div>
+
+             
+            </div>
+
+            <h2 className="font-semibold text-xl">Other Major Contacts (Optional)</h2>
+
+             <div className="flex flex-row gap-3">
+              <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-1/2 bg-white">
+                <input
+                  type="text"
+                  placeholder="Project Manager Na..."
+                  className="w-full outline-none bg-transparent placeholder-gray-400"
+                />
+              </div>
+
+              
+
+               <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-1/2 bg-white">
+                <input
+                  type="text"
+                  placeholder="Practice Manager Email"
+                  className="w-full outline-none bg-transparent placeholder-gray-400"
+                />
+              </div>
+
+              <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-1/2 bg-white">
+                <input
+                  type="text"
+                  placeholder="IT Support Team Name"
+                  className="w-full outline-none bg-transparent placeholder-gray-400"
+                />
+              </div>
+
+             
+            </div>
+            
+            <p className="text-[#FF0000]">Caution : If we find the account suspicious, our system will delete your account <br></br>   without any notice</p>
+
+            <div className=" border border-[#d5d7da] p-2 w-[630px] h-auto  rounded-lg">
+            
+            <p>This software and its underlying idea, design, code, and implementation are the intellectual property of our organization. Any unauthorized copying, reproduction, distribution, modification, or use of this software, in whole or in part, without explicit written permission from the owner, is strictly prohibited and may result in legal action.
+Account will be suspended if the user is found to be not a medical clinic owner/ practice manager /authorised person for the entity
+All rights reserved. Unauthorized use of this software, including but not limited to reverse engineering, replication, or commercial exploitation, is a violation of intellectual property laws. The owner reserves the right to take legal action against any individual or entity found to be in violation of these terms.
+For licensing inquiries or permissions, please contact us.</p>
+            
+            </div>
+
+            
           </div>
         </div>
       </div>
