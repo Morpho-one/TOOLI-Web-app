@@ -10,7 +10,7 @@ import Logo from '../../../assets/Logo.svg'
 function Signup() {
   return (
     <>
-     <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#e3c8fb_0%,_#d8b7f9_40%,_#c6a4f7_60%)] m-0 p-0">
+     <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#e9cff1_0%,_#e8cef0_100%)] m-0 p-0">
         {/* Top Navigation Bar */}
         <div className="flex justify-between items-center px-8 py-6">
           {/* Left Section: Logo + Text */}
@@ -33,7 +33,7 @@ function Signup() {
             <span className="text-black font-medium cursor-pointer hover:text-[#6849a3] transition">
               Login
             </span>
-            <button className="bg-gradient-to-r from-[#3b82f6] to-[#2563eb] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
+            <button className="bg-gradient-to-r from-[#816df5] to-[#816df5] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
               Sign Up
             </button>
           </div>
@@ -268,9 +268,71 @@ For licensing inquiries or permissions, please contact us.</p>
             
             </div>
 
-            
+            <div className="flex items-center justify-between border border-[#d5d7da] rounded-lg p-3 mt-1 w-1/3 relative left-1 bg-white">
+  <div className="flex items-center">
+    <input
+      id="not-robot"
+      type="checkbox"
+      className="h-[22px] w-[22px] rounded border-gray-300 text-[#38afa4] focus:ring-[#38afa4]"
+    />
+    <label htmlFor="not-robot" className="ml-2 text-sm text-gray-700">
+      I’m not a robot
+    </label>
+  </div>
+  <img
+    src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+    alt="reCAPTCHA logo"
+    className="w-8 h-8 opacity-70"
+  />
+
+  
+ 
+{/* Testing comment */}
+</div>
+
+<div className="flex items-center mt-1 relative left-1 w-auto">
+  <input
+    id="policy-agreement"
+    type="checkbox"
+    className="h-[18px] w-[18px] rounded border-gray-300 text-[#38afa4] focus:ring-[#38afa4]"
+  />
+  <label htmlFor="policy-agreement" className="ml-2 text-sm text-gray-700">
+    I have read and agree to the{" "}
+    <a href="#" className="text-[#0055ff] hover:underline">
+      Privacy
+    </a>{" "}
+    and{" "}
+    <a href="#" className="text-[#0055ff] hover:underline">
+      Security
+    </a>{" "}
+    Policy.
+  </label>
+</div>
+
+<div className="mt-6 relative left-2">
+  <button
+    type="submit"
+    className="w-[550px] h-[72px] bg-[#c1b4f8] text-white font-semibold text-lg rounded-xl shadow-md hover:opacity-90 transition"
+  >
+    Register
+  </button>
+
+   <p className="mt-2 text-sm text-gray-700">
+    Already registered?{" "}
+   
+  </p>
+</div>
           </div>
+
+          <img
+      src={Avatar}
+      alt="Avatar illustration"
+      className="w-[300px] h-auto object-contain drop-shadow-lg relative left-70"
+      style={{ filter: 'drop-shadow(-120px 0 15px #b1a4d4)' }}
+    />
         </div>
+
+        
       </div>
     
    
