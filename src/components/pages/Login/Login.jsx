@@ -6,7 +6,7 @@ import Password from '../../../assets/Password.svg'
 import Social from '../../../assets/Social-icon.svg'
 import { useState } from 'react'
 
-function login() {
+function login({ onSignupClick }) {
 
   const [toggleState, setToggleState] = useState("false");
 
@@ -38,7 +38,10 @@ function login() {
           <span className="text-black font-medium cursor-pointer hover:text-[#6849a3] transition">
             Login
           </span>
-          <button className="bg-gradient-to-r from-[#3b82f6] to-[#2563eb] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
+          <button 
+          
+          onClick={onSignupClick}
+          className="bg-gradient-to-r from-[#3b82f6] to-[#2563eb] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
             Sign Up
           </button>
         </div>
@@ -147,6 +150,10 @@ function login() {
   Don’t have an account?{" "}
   <a
     href="#"
+     onClick={(e) => {
+    e.preventDefault();
+    onSignupClick();
+  }}
     className="text-[#9e87fe] font-medium hover:text-[#8671fa] transition"
   >
     Create Account
