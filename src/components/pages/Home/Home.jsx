@@ -1,5 +1,8 @@
 import Logo from '../../../assets/Logo.svg'
 import Avatar from '../../../assets/Avatar.svg'
+import Cyber from '../../../assets/CyberCert.svg'
+import Best from '../../../assets/Best.svg'
+import CSCAU from '../../../assets/CSCAU.svg'
 
 function Home({ onSignupClick }) {
   return (
@@ -48,8 +51,8 @@ function Home({ onSignupClick }) {
           </div>
 
           {/* Right Div — Text Content */}
-          <div className="max-w-xl">
-            <h1 className="text-6xl font-semibold text-{#3c3c3c} leading-tight">
+          <div className="max-w-xl relative right-22 bottom-11">
+            <h1 className="text-6xl font-semibold text-[#525761] leading-tight">
               Streamline Your <br /> Medical <br /> Document Upload
             </h1>
             <p className="text-gray-600 mt-5 text-base leading-relaxed">
@@ -69,19 +72,19 @@ function Home({ onSignupClick }) {
 
             <div className="flex items-center space-x-10 mt-10 opacity-80">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Check_mark.svg/32px-Check_mark.svg.png"
+                src={Cyber}
                 alt="Certification 1"
-                className="h-10"
+                className="h-20 w-20"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Check_mark.svg/32px-Check_mark.svg.png"
+                src={Best}
                 alt="Certification 2"
-                className="h-10"
+                className="h-22 flex relative right-6"
               />
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Check_mark.svg/32px-Check_mark.svg.png"
+                src={CSCAU}
                 alt="Certification 3"
-                className="h-10"
+                className="h-20 flex relative right-19"
               />
             </div>
           </div>

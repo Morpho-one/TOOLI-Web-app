@@ -7,11 +7,21 @@ import './App.css'
 function App() {
   const [showSignup, setShowSignup] = useState(false)
   const [showHome, setShowHome] = useState(false) // lowercase for clarity
+  
+   const handleSignupClick = () => {
+    setShowSignup(true)
+    setShowHome(false)
+  }
+
+  const handleLoginClick = () => {
+    setShowHome(true)
+    setShowSignup(false)
+  }
 
   return (
     <>
-      {setShowHome ? ( // ✅ Corrected here
-        <Home  />
+      {showHome ? ( // ✅ Corrected here
+        <Home onSignupClick={handleSignupClick}  />
       ) : showSignup ? (
         <Signup onBackToLogin={() => setShowSignup(false)} />
       ) : (
