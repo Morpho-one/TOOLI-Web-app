@@ -42,7 +42,7 @@ function Home({ onSignupClick }) {
         {/* Hero Section */}
         <div className="flex justify-center items-center mt-10 px-16 space-x-16">
           {/* Left Div — Avatar Section */}
-          <div className="bg-[#E9CFF1] w-[1080px] h-[700px] rounded-r-[60px] flex justify-end items-right shadow-md relative right-110 bottom-9">
+          <div className="bg-gradient-to-r from-[#d8bffa] to-[#f4ddfa] w-[1200px] h-[700px] rounded-r-[60px] flex justify-end items-right shadow-md relative right-110 bottom-9">
             <img
               src={Avatar}
               alt="Avatar"
@@ -51,7 +51,7 @@ function Home({ onSignupClick }) {
           </div>
 
           {/* Right Div — Text Content */}
-          <div className="max-w-xl relative right-35 bottom-11">
+          <div className="max-w-xl relative right-70 bottom-11">
             <h1 className="text-6xl font-semibold text-[#525761] leading-tight">
               Streamline Your <br /> Medical <br /> Document Upload
             </h1>
