@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
   const [showSignup, setShowSignup] = useState(false)
-  const [showHome, setShowHome] = useState(false) // lowercase for clarity
+  const [showHome, setShowHome] = useState(true) // lowercase for clarity
   
    const handleSignupClick = () => {
     setShowSignup(true)
