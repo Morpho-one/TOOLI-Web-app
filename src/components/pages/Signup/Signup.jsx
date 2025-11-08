@@ -7,7 +7,7 @@ import Password from '../../../assets/Password.svg'
 import Social from '../../../assets/Social-icon.svg'
 import { useState } from 'react'
 import Logo from '../../../assets/Logo.svg'
-function Signup() {
+function Signup({onLoginClick, onLogoClick}) {
   return (
     <>
      <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#e9cff1_0%,_#e8cef0_100%)] m-0 p-0">
@@ -16,11 +16,12 @@ function Signup() {
           {/* Left Section: Logo + Text */}
           <div className="flex items-center">
             <img
+              onClick={onLogoClick}
               src={Logo}
               alt="Tooli Logo"
               className="w-28 h-28 inline-block"
             />
-            <span className="ml-2 text-[#38afa4] font-bold text-lg">
+            <span className="ml-2 text-[#38afa4] font-semibold text-lg font-poppins">
               Medical Document Upload
             </span>
           </div>
@@ -30,17 +31,20 @@ function Signup() {
             <span className="text-black font-medium cursor-pointer hover:text-[#6849a3] transition">
               Security
             </span>
-            <span className="text-black font-medium cursor-pointer hover:text-[#6849a3] transition">
+            <span 
+            
+            onClick={onLoginClick}
+            className="text-black font-medium cursor-pointer hover:text-[#6849a3] transition">
               Login
             </span>
-            <button className="bg-gradient-to-r from-[#816df5] to-[#816df5] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
+            <button className="bg-gradient-to-b from-[#7c6af1] via-[#7c6af1] via-30% to-[#634fda] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
               Sign Up
             </button>
           </div>
         </div>
 
         {/* Main Signup Box */}
-        <div className="flex justify-start items-center mt-10 space-x-16 ml-10">
+        <div className="flex justify-start items-center mt-10 space-x-16 ml-150">
           
           <div className="h-auto w-[680px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-lg p-8 flex flex-col gap-4">
 
@@ -317,7 +321,10 @@ For licensing inquiries or permissions, please contact us.</p>
     Register
   </button>
 
-   <p className="mt-2 text-sm text-gray-700">
+   <p 
+   
+   onClick={onLoginClick}
+   className="mt-2 text-sm text-gray-700 cursor-pointer hover:text-[#6849a3] transition">
     Already registered?{" "}
    
   </p>
@@ -327,7 +334,7 @@ For licensing inquiries or permissions, please contact us.</p>
           <img
       src={Avatar}
       alt="Avatar illustration"
-      className="w-[300px] h-auto object-contain drop-shadow-lg relative left-70"
+      className="w-[300px] h-auto object-contain drop-shadow-lg relative left-30 bottom-120"
       style={{ filter: 'drop-shadow(-120px 0 15px #b1a4d4)' }}
     />
         </div>

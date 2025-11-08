@@ -4,7 +4,7 @@ import Cyber from '../../../assets/CyberCert.svg'
 import Best from '../../../assets/Best.svg'
 import CSCAU from '../../../assets/CSCAU.svg'
 
-function Home({ onSignupClick }) {
+function Home({ onSignupClick, onLoginClick }) {
   return (
     <>
       <div className="min-h-screen bg-white m-0 p-0">
@@ -27,7 +27,9 @@ function Home({ onSignupClick }) {
             <span className="text-black font-medium cursor-pointer hover:text-[#6849a3] transition">
               Security
             </span>
-            <span className="text-black font-medium cursor-pointer hover:text-[#6849a3] transition">
+            <span 
+            onClick={onLoginClick}
+            className="text-black font-medium cursor-pointer hover:text-[#6849a3] transition">
               Login
             </span>
             <button

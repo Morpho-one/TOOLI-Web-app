@@ -45,7 +45,7 @@ function login({ onSignupClick, onLogoClick }) {
           <button 
           
           onClick={onSignupClick}
-          className="bg-gradient-to-r from-[#816df5] to-[#816df5] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
+          className="bg-gradient-to-b from-[#7c6af1] via-[#7c6af1] via-30% to-[#634fda] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
             Sign Up
           </button>
         </div>
@@ -91,9 +91,10 @@ function login({ onSignupClick, onLogoClick }) {
       id="remember-me"
       name="remember-me"
       type="checkbox"
-      className="h-[22px] w-[22px] rounded border-gray-300 bg-[#c5b7f6] appearance-none cursor-pointer 
-                 relative checked:before:content-['✓'] checked:before:absolute checked:before:top-[-2px] checked:before:left-[4px] 
-                 checked:before:text-white checked:before:text-[18px] checked:before:font-bold"
+      className="h-[22px] w-[22px] rounded border border-gray-300 bg-white appearance-none cursor-pointer 
+               relative checked:bg-[#c5b7f6] checked:before:content-['✓'] checked:before:absolute 
+               checked:before:top-[-2px] checked:before:left-[4px] checked:before:text-white 
+               checked:before:text-[18px] checked:before:font-bold"
     />
     <label
       htmlFor="remember-me"
@@ -135,15 +136,15 @@ function login({ onSignupClick, onLogoClick }) {
 
 
 <button
-  className="w-full h-[86px] bg-[#c1b4f8] text-white font-semibold text-xl rounded-xl mt-6 hover:bg-[#b3a2f4] transition-all duration-200 shadow-md relative right-0"
+  className="w-11/12 h-[38px] bg-[#c1b4f8] text-white font-semibold text-xl rounded-xl mt-6 hover:bg-[#b3a2f4] transition-all duration-200 shadow-md relative left-4"
 >
   Sign In
 </button>
 
-<p className='w-[20px] h-[10px] relative top-6'>OR</p>
+<p className='w-[20px] h-[10px] relative top-5 right-1'>OR</p>
 
 
-<button className="flex items-center justify-center w-[300px] h-[80px] bg-white text-black font-medium text-lg rounded-xl mt-12 border border-gray-300 shadow-sm hover:bg-gray-100 transition-all duration-200">
+<button className="flex items-center justify-center w-11/12 h-[40px] bg-white text-black font-medium text-lg rounded-xl mt-12 border border-gray-300 shadow-sm hover:bg-gray-100 transition-all duration-200">
   <img
     src={Social}
     alt="Google Icon"
@@ -158,7 +159,7 @@ function login({ onSignupClick, onLogoClick }) {
     href="#"
      onClick={(e) => {
     e.preventDefault();
-    onSignupClick();
+    onSignupClick()
   }}
     className="text-[#9e87fe] font-medium hover:text-[#8671fa] transition"
   >
