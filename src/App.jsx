@@ -7,6 +7,7 @@ import './App.css'
 function App() {
   const [showSignup, setShowSignup] = useState(false)
   const [showHome, setShowHome] = useState(true) // lowercase for clarity
+  const [showLogin, setShowLogin] = useState(false)
   
    const handleSignupClick = () => {
     setShowSignup(true)
@@ -14,20 +15,22 @@ function App() {
   }
 
   const handleLoginClick = () => {
-    setShowHome(true)
+    setShowHome(false)
+    setShowLogin(true)
     setShowSignup(false)
   }
 
   return (
     <>
       {showHome ? ( // ✅ Corrected here
-        <Home onSignupClick={handleSignupClick}  />
+        <Home onSignupClick={handleSignupClick} onLoginClick={handleLoginClick}  />
       ) : showSignup ? (
-        <Signup onBackToLogin={() => setShowSignup(false)} />
+        <Signup onBackToLogin={() => setShowSignup(false)} onLoginClick={handleLoginClick} onLogoClick={() => setShowHome(true)} />
       ) : (
         <Login
           onSignupClick={() => setShowSignup(true)}
           onLogoClick={() => setShowHome(true)} // ✅ works now
+
         />
       )}
     </>
