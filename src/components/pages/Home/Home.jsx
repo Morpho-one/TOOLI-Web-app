@@ -3,23 +3,22 @@ import Avatar from '../../../assets/Avatar.svg'
 import Cyber from '../../../assets/CyberCert.svg'
 import Best from '../../../assets/Best.svg'
 import CSCAU from '../../../assets/CSCAU.svg'
+import Primary from '../../../assets/PrimaryLogo.svg'
 
 function Home({ onSignupClick, onLoginClick }) {
   return (
     <>
       <div className="min-h-screen bg-white m-0 p-0">
         {/* Top Navigation Bar */}
-        <div className="flex justify-between items-center px-8 py-6 relative bottom-10">
+          <div className="flex justify-between items-center h-[80px] px-8 py-6 relative ">
           {/* Left Section: Logo + Text */}
           <div className="flex items-center">
             <img
-              src={Logo}
+              src={Primary}
               alt="Tooli Logo"
-              className="w-28 h-28 inline-block"
+              className="w-90 h-90 inline-block"
             />
-            <span className="ml-2 text-[#38afa4] font-bold text-lg">
-              Medical Document Upload
-            </span>
+           
           </div>
 
           {/* Right Section: Links + Button */}
@@ -34,7 +33,7 @@ function Home({ onSignupClick, onLoginClick }) {
             </span>
             <button
               onClick={onSignupClick}
-              className="bg-gradient-to-b from-[#7c6af1] via-[#7c6af1] via-30% to-[#634fda] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer"
+              className="bg-gradient-to-b from-[#756fff] via-[#756fff] via-30% to-[#756fff] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer"
             >
               Sign Up
             </button>
@@ -66,13 +65,13 @@ function Home({ onSignupClick, onLoginClick }) {
             <div className="flex space-x-4 mt-8">
               <button 
               onClick={onSignupClick}
-              className="bg-gradient-to-b from-[#7c6af1] via-[#7c6af1] via-30% to-[#634fda] text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:opacity-90 transition cursor-pointer">
+              className="bg-gradient-to-b from-[#756fff] via-[#756fff] via-30% to-[#756fff] text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:opacity-90 transition cursor-pointer">
                 Get Started
               </button>
               <button 
               
               onClick={() => window.open('https://medicaldocumentupload.com.au/', '_blank')}
-              className="border-2 border-[#7561f7] text-[#7561f7] font-semibold px-6 py-3 rounded-lg hover:bg-[#f5f2ff] transition cursor-pointer">
+              className="border-2 border-[#756fff] text-[#756fff] font-semibold px-6 py-3 rounded-lg hover:bg-[#f5f2ff] transition cursor-pointer">
                 Learn More
               </button>
             </div>

@@ -5,6 +5,7 @@ import inputlogo from '../../../assets/input-logo.svg'
 import Email from '../../../assets/Email.svg'
 import Password from '../../../assets/Password.svg'
 import Social from '../../../assets/Social-icon.svg'
+import Primary from '../../../assets/PrimaryLogo.svg'
 import { useState } from 'react'
 
 function login({ onSignupClick, onLogoClick }) {
@@ -19,19 +20,17 @@ function login({ onSignupClick, onLogoClick }) {
 
         <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#faeffc_0%,_#faeffc_100%)] m-0 p-0">
  {/* Top Navigation Bar */}
-      <div className="flex justify-between items-center px-8 py-6">
+      <div className="flex justify-between items-center h-[80px] px-8 py-6 relative ">
 
         {/* Left Section: Logo + Text */}
-        <div className="flex items-center"
+        <div className="relative flex justify-between items-center px-8 py-6 "
         onClick={onLogoClick}>
           <img
-            src={Logo}
+            src={Primary}
             alt="Tooli Logo"
-            className="w-28 h-28 inline-block"
+            className="w-90 h-90 inline-block"
           />
-          <span className="ml-2 text-[#38afa4] font-bold text-lg">
-            Medical Document Upload
-          </span>
+          
         </div>
 
         {/* Right Section: Links + Button */}
@@ -45,7 +44,7 @@ function login({ onSignupClick, onLogoClick }) {
           <button 
           
           onClick={onSignupClick}
-          className="bg-gradient-to-b from-[#827bff] via-[#827bff] via-30% to-[#827bff] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
+          className="bg-gradient-to-b from-[#756fff] via-[#756fff] via-30% to-[#756fff] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
             Sign Up
           </button>
         </div>
@@ -53,13 +52,13 @@ function login({ onSignupClick, onLogoClick }) {
       </div>
 
 
-    <div className="flex justify-center items-center mt-10 space-x-16">
+    <div className="flex justify-center items-center mt-40 space-x-16">
 
-      <div className="h-auto w-[450px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-[0_0_40px_10px_#e1ccf6]  p-8 justify-items-center relative bottom-15">
+      <div className="h-auto w-[450px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-[0_0_80px_20px_#e1ccf6]  px-8 pt-3 pb-8 justify-items-center relative bottom-15">
 
-<img className='w-65 h-35' src={inputlogo}></img>
+<img className='w-65 h-35 relative bottom-1' src={inputlogo}></img>
 
-<h2 className="ml-2 relative -top-3 text-[#38afa4] font-bold text-lg ">Medical Document Upload</h2>
+<h2 className="ml-2 relative -top-4 text-[#7fe9e7] font-bold text-lg ">Medical Document Upload</h2>
 
 <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-11/12 bg-white">
   <img src={Email} alt="Email Icon" className="w-[22px] h-[22px] mr-2 opacity-70" />
