@@ -10,7 +10,7 @@ import Logo from '../../../assets/Logo.svg'
 function Signup({onLoginClick, onLogoClick}) {
   return (
     <>
-     <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#e9cff1_0%,_#e8cef0_100%)] m-0 p-0">
+     <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#faeffc_0%,_#faeffc_100%)] m-0 p-0">
         {/* Top Navigation Bar */}
         <div className="flex justify-between items-center px-8 py-6">
           {/* Left Section: Logo + Text */}
@@ -44,9 +44,9 @@ function Signup({onLoginClick, onLogoClick}) {
         </div>
 
         {/* Main Signup Box */}
-        <div className="flex justify-start items-center mt-10 space-x-16 ml-150">
+        <div className="flex justify-start items-center mt-10 space-x-16 ml-130">
           
-          <div className="h-auto w-[680px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-lg p-8 flex flex-col gap-4">
+          <div className="h-auto w-[680px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-[0_0_40px_10px_#e1ccf6] p-8 flex flex-col gap-4">
 
             
 
@@ -265,7 +265,7 @@ function Signup({onLoginClick, onLogoClick}) {
 
             <div className=" border border-[#d5d7da] p-2 w-[630px] h-auto  rounded-lg">
             
-            <p>This software and its underlying idea, design, code, and implementation are the intellectual property of our organization. Any unauthorized copying, reproduction, distribution, modification, or use of this software, in whole or in part, without explicit written permission from the owner, is strictly prohibited and may result in legal action.
+            <p className='text-sm'>This software and its underlying idea, design, code, and implementation are the intellectual property of our organization. Any unauthorized copying, reproduction, distribution, modification, or use of this software, in whole or in part, without explicit written permission from the owner, is strictly prohibited and may result in legal action.
 Account will be suspended if the user is found to be not a medical clinic owner/ practice manager /authorised person for the entity
 All rights reserved. Unauthorized use of this software, including but not limited to reverse engineering, replication, or commercial exploitation, is a violation of intellectual property laws. The owner reserves the right to take legal action against any individual or entity found to be in violation of these terms.
 For licensing inquiries or permissions, please contact us.</p>
@@ -321,22 +321,26 @@ For licensing inquiries or permissions, please contact us.</p>
     Register
   </button>
 
-   <p 
-   
-   onClick={onLoginClick}
-   className="mt-2 text-sm text-gray-700 cursor-pointer hover:text-[#6849a3] transition">
-    Already registered?{" "}
-   
-  </p>
+   <p className="mt-2 text-sm text-gray-700">
+  Already registered?{" "}
+  <span
+    onClick={onLoginClick}
+    className="text-[#7c6af1] font-medium cursor-pointer hover:text-[#6849a3] transition"
+  >
+    Sign in
+  </span>
+</p>
 </div>
           </div>
 
-          <img
-      src={Avatar}
-      alt="Avatar illustration"
-      className="w-[300px] h-auto object-contain drop-shadow-lg relative left-30 bottom-120"
-      style={{ filter: 'drop-shadow(-120px 0 15px #b1a4d4)' }}
-    />
+        <div className="flex justify-start items-start w-[300px] max-w-[40%]">
+  <img
+    src={Avatar}
+    alt="Avatar"
+    className="w-full h-auto object-contain relative bottom-120 left-10"
+    
+  />
+</div>
         </div>
 
         
