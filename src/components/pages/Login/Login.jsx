@@ -17,7 +17,7 @@ function login({ onSignupClick, onLogoClick }) {
 
         <>
 
-        <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#e9cff1_0%,_#e8cef0_100%)] m-0 p-0">
+        <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#faeffc_0%,_#faeffc_100%)] m-0 p-0">
  {/* Top Navigation Bar */}
       <div className="flex justify-between items-center px-8 py-6">
 
@@ -45,7 +45,7 @@ function login({ onSignupClick, onLogoClick }) {
           <button 
           
           onClick={onSignupClick}
-          className="bg-gradient-to-b from-[#7c6af1] via-[#7c6af1] via-30% to-[#634fda] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
+          className="bg-gradient-to-b from-[#827bff] via-[#827bff] via-30% to-[#827bff] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
             Sign Up
           </button>
         </div>
@@ -55,7 +55,7 @@ function login({ onSignupClick, onLogoClick }) {
 
     <div className="flex justify-center items-center mt-10 space-x-16">
 
-      <div className="h-auto w-[450px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-lg p-8 justify-items-center">
+      <div className="h-auto w-[450px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-[0_0_40px_10px_#e1ccf6]  p-8 justify-items-center relative bottom-15">
 
 <img className='w-65 h-35' src={inputlogo}></img>
 
@@ -107,7 +107,7 @@ function login({ onSignupClick, onLogoClick }) {
   {/* Right: Forgot Password */}
   <a
     href="#"
-    className="text-sm font-medium text-[#000] hover:text-[#2e9689] transition"
+    className="text-sm font-normal text-[#000] hover:text-[#2e9689] transition relative right-9"
   >
     Forgot Password?
   </a>
@@ -176,8 +176,8 @@ function login({ onSignupClick, onLogoClick }) {
        <img
     src={Avatar}
     alt="Avatar"
-    className="w-[400px] h-[400px] ml-30  "
-   style={{ filter: 'drop-shadow(-120px 0 15px #b1a4d4)' }}
+    className="w-[400px] h-[400px] ml-30 relative bottom-20 "
+   
   />
 
       </div>
