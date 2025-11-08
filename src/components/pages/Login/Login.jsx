@@ -1,3 +1,4 @@
+
 import Logo from '../../../assets/Logo.svg'
 import Avatar from '../../../assets/Avatar.svg'
 import inputlogo from '../../../assets/input-logo.svg'
@@ -6,9 +7,11 @@ import Password from '../../../assets/Password.svg'
 import Social from '../../../assets/Social-icon.svg'
 import { useState } from 'react'
 
-function login({ onSignupClick }) {
+function login({ onSignupClick, onLogoClick }) {
 
-  const [toggleState, setToggleState] = useState("false");
+  
+
+  
 
     return (
 
@@ -19,7 +22,8 @@ function login({ onSignupClick }) {
       <div className="flex justify-between items-center px-8 py-6">
 
         {/* Left Section: Logo + Text */}
-        <div className="flex items-center">
+        <div className="flex items-center"
+        onClick={onLogoClick}>
           <img
             src={Logo}
             alt="Tooli Logo"
