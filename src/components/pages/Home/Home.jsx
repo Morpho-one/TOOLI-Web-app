@@ -64,7 +64,9 @@ function Home({ onSignupClick, onLoginClick }) {
             </p>
 
             <div className="flex space-x-4 mt-8">
-              <button className="bg-gradient-to-b from-[#7c6af1] via-[#7c6af1] via-30% to-[#634fda] text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:opacity-90 transition">
+              <button 
+              onClick={onSignupClick}
+              className="bg-gradient-to-b from-[#7c6af1] via-[#7c6af1] via-30% to-[#634fda] text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:opacity-90 transition">
                 Get Started
               </button>
               <button className="border-2 border-[#7561f7] text-[#7561f7] font-semibold px-6 py-3 rounded-lg hover:bg-[#f5f2ff] transition">
