@@ -9,7 +9,7 @@ function Home({ onSignupClick }) {
     <>
       <div className="min-h-screen bg-white m-0 p-0">
         {/* Top Navigation Bar */}
-        <div className="flex justify-between items-center px-8 py-6">
+        <div className="flex justify-between items-center px-8 py-6 relative bottom-10">
           {/* Left Section: Logo + Text */}
           <div className="flex items-center">
             <img
@@ -32,7 +32,7 @@ function Home({ onSignupClick }) {
             </span>
             <button
               onClick={onSignupClick}
-              className="bg-[#816df5] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer"
+              className="bg-gradient-to-b from-[#7c6af1] via-[#7c6af1] via-30% to-[#634fda] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer"
             >
               Sign Up
             </button>
@@ -42,30 +42,30 @@ function Home({ onSignupClick }) {
         {/* Hero Section */}
         <div className="flex justify-center items-center mt-10 px-16 space-x-16">
           {/* Left Div — Avatar Section */}
-          <div className="bg-[#E9CFF1] w-[780px] h-[700px] rounded-r-[60px] flex justify-end items-right shadow-md relative right-110 bottom-9">
+          <div className="bg-[#E9CFF1] w-[1080px] h-[700px] rounded-r-[60px] flex justify-end items-right shadow-md relative right-110 bottom-9">
             <img
               src={Avatar}
               alt="Avatar"
-              className="w-[320px] h-[680px] mt-7 mr-20"
+              className="w-[420px] h-[700px] mb-0 mr-20"
             />
           </div>
 
           {/* Right Div — Text Content */}
-          <div className="max-w-xl relative right-22 bottom-11">
+          <div className="max-w-xl relative right-35 bottom-11">
             <h1 className="text-6xl font-semibold text-[#525761] leading-tight">
               Streamline Your <br /> Medical <br /> Document Upload
             </h1>
-            <p className="text-gray-600 mt-5 text-base leading-relaxed">
+            <p className="text-[#202224] mt-5 text-base leading-relaxed font-medium font-poppins">
               Automatically allocate medical documents to patient’s file or the doctor’s inbox
               with our AI-powered software in just 15 seconds. Medical Document Reception tool
               provides a modern, efficient, and secure solution to medical document management.
             </p>
 
             <div className="flex space-x-4 mt-8">
-              <button className="bg-[#816df5] text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:opacity-90 transition">
+              <button className="bg-gradient-to-b from-[#7c6af1] via-[#7c6af1] via-30% to-[#634fda] text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:opacity-90 transition">
                 Get Started
               </button>
-              <button className="border border-[#816df5] text-[#816df5] font-semibold px-6 py-3 rounded-lg hover:bg-[#f5f2ff] transition">
+              <button className="border-2 border-[#7561f7] text-[#7561f7] font-semibold px-6 py-3 rounded-lg hover:bg-[#f5f2ff] transition">
                 Learn More
               </button>
             </div>
