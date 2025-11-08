@@ -5,25 +5,24 @@ import inputlogo from '../../../assets/input-logo.svg'
 import Email from '../../../assets/Email.svg'
 import Password from '../../../assets/Password.svg'
 import Social from '../../../assets/Social-icon.svg'
+import Primary from '../../../assets/PrimaryLogo.svg'
 import { useState } from 'react'
 import Logo from '../../../assets/Logo.svg'
 function Signup({onLoginClick, onLogoClick}) {
   return (
     <>
-     <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#faeffc_0%,_#faeffc_100%)] m-0 p-0">
+     <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#fbeefc_0%,_#fbeefc_100%)] m-0 p-0">
         {/* Top Navigation Bar */}
-        <div className="flex justify-between items-center px-8 py-6">
+         <div className="flex justify-between items-center h-[80px] px-8 py-6 relative">
           {/* Left Section: Logo + Text */}
           <div className="flex items-center">
             <img
               onClick={onLogoClick}
-              src={Logo}
+              src={Primary}
               alt="Tooli Logo"
-              className="w-28 h-28 inline-block"
+              className="w-90 h-90 inline-block"
             />
-            <span className="ml-2 text-[#38afa4] font-semibold text-lg font-poppins">
-              Medical Document Upload
-            </span>
+           
           </div>
 
           {/* Right Section: Links + Button */}
@@ -37,16 +36,16 @@ function Signup({onLoginClick, onLogoClick}) {
             className="text-black font-medium cursor-pointer hover:text-[#6849a3] transition">
               Login
             </span>
-            <button className="bg-gradient-to-b from-[#7c6af1] via-[#7c6af1] via-30% to-[#634fda] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
+            <button className="bg-gradient-to-b from-[#756fff] via-[#756fff] via-30% to-[#756fff] text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:opacity-90 transition cursor-pointer">
               Sign Up
             </button>
           </div>
         </div>
 
         {/* Main Signup Box */}
-        <div className="flex justify-start items-center mt-10 space-x-16 ml-130">
+        <div className="flex justify-start items-center mt-20 space-x-16 ml-130">
           
-          <div className="h-auto w-[680px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-[0_0_40px_10px_#e1ccf6] p-8 flex flex-col gap-4">
+          <div className="h-auto w-[680px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-[0_0_80px_20px_#e1ccf6] p-8 flex flex-col gap-4">
 
             
 
@@ -71,6 +70,8 @@ function Signup({onLoginClick, onLogoClick}) {
                   className="w-full outline-none bg-transparent placeholder-gray-400"
                 />
               </div>
+
+              
             </div>
 
             {/* Row 2 */}
@@ -79,6 +80,14 @@ function Signup({onLoginClick, onLogoClick}) {
                 <input
                   type="number"
                   placeholder="Phone"
+                  className="w-full outline-none bg-transparent placeholder-gray-400"
+                />
+              </div>
+
+               <div className="flex items-center border border-[#d5d7da] rounded-lg p-2 w-1/2 bg-white">
+                <input
+                  type="text"
+                  placeholder="Position"
                   className="w-full outline-none bg-transparent placeholder-gray-400"
                 />
               </div>
