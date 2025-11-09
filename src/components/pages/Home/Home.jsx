@@ -4,7 +4,8 @@ import Cyber from '../../../assets/CyberCert.svg'
 import Best from '../../../assets/Best.svg'
 import CSCAU from '../../../assets/CSCAU.svg'
 import Primary from '../../../assets/PrimaryLogo.svg'
-
+import Homeavatar from '../../../assets/Home-Avatar.svg'
+import Shadowavatar from '../../../assets/Shadow-Avatar.png'
 function Home({ onSignupClick, onLoginClick }) {
   return (
     <>
@@ -45,10 +46,12 @@ function Home({ onSignupClick, onLoginClick }) {
           {/* Left Div — Avatar Section */}
           <div className="bg-gradient-to-r from-[#d8bffa] to-[#f4ddfa] w-[1200px] h-[700px] rounded-r-[60px] flex justify-end items-right shadow-md relative right-110 bottom-9">
             <img
-              src={Avatar}
+              src={Shadowavatar}
               alt="Avatar"
-              className="w-[420px] h-[700px] mb-0 mr-20"
+              className="w-[700px] h-[600px] mb-0 mr-20 relative top-11 "
+              
             />
+            
           </div>
 
           {/* Right Div — Text Content */}
