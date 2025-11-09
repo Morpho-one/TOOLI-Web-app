@@ -4,8 +4,7 @@ import Cyber from '../../../assets/CyberCert.svg'
 import Best from '../../../assets/Best.svg'
 import CSCAU from '../../../assets/CSCAU.svg'
 import Primary from '../../../assets/PrimaryLogo.svg'
-import Homeavatar from '../../../assets/Home-Avatar.svg'
-import Shadowavatar from '../../../assets/Shadow-Avatar.png'
+import Shadowavatar from '../../../assets/Shadow-avatar.png'
 function Home({ onSignupClick, onLoginClick }) {
   return (
     <>
@@ -48,7 +47,7 @@ function Home({ onSignupClick, onLoginClick }) {
             <img
               src={Shadowavatar}
               alt="Avatar"
-              className="w-[700px] h-[600px] mb-0 mr-20 relative top-11 "
+              className="w-[750px] h-[600px] mb-0 mr-20 relative top-13 "
               
             />
             
