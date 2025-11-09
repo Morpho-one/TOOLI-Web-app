@@ -18,7 +18,7 @@ function login({ onSignupClick, onLogoClick }) {
 
         <>
 
-        <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#faeffc_0%,_#faeffc_100%)] m-0 p-0">
+        <div className="min-h-screen bg-white m-0 p-0">
  {/* Top Navigation Bar */}
       <div className="flex justify-between items-center h-[80px] px-8 py-6 relative ">
 
@@ -175,7 +175,7 @@ function login({ onSignupClick, onLogoClick }) {
        <img
     src={Avatar}
     alt="Avatar"
-    className="w-[400px] h-[400px] ml-30 relative bottom-20 "
+    className="w-[400px] h-[400px] ml-40 relative bottom-20  drop-shadow-[-180px_0_60px_#bfa3f5] "
    
   />
 
