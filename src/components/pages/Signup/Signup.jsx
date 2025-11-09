@@ -11,7 +11,7 @@ import Logo from '../../../assets/Logo.svg'
 function Signup({onLoginClick, onLogoClick}) {
   return (
     <>
-     <div className="min-h-screen bg-[radial-gradient(circle_at_center,_#fbeefc_0%,_#fbeefc_100%)] m-0 p-0">
+     <div className="min-h-screen bg-white m-0 p-0">
         {/* Top Navigation Bar */}
          <div className="flex justify-between items-center h-[80px] px-8 py-6 relative">
           {/* Left Section: Logo + Text */}
@@ -43,7 +43,7 @@ function Signup({onLoginClick, onLogoClick}) {
         </div>
 
         {/* Main Signup Box */}
-        <div className="flex justify-start items-center mt-20 space-x-16 ml-130">
+        <div className="flex justify-start items-center mt-35 space-x-16 ml-105">
           
           <div className="h-auto w-[680px] bg-white bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-[0_0_80px_20px_#e1ccf6] p-8 flex flex-col gap-4">
 
@@ -342,11 +342,11 @@ For licensing inquiries or permissions, please contact us.</p>
 </div>
           </div>
 
-        <div className="flex justify-start items-start w-[300px] max-w-[40%]">
+        <div className="flex justify-start items-start w-[250px] max-w-[40%]">
   <img
     src={Avatar}
     alt="Avatar"
-    className="w-full h-auto object-contain relative bottom-120 left-10"
+    className="w-full h-auto object-contain relative bottom-120 left-28 drop-shadow-[-120px_0_40px_#bfa3f5]"
     
   />
 </div>
