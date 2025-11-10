@@ -41,7 +41,7 @@ function Home({ onSignupClick, onLoginClick }) {
         </div>
 
         {/* Hero Section */}
-        <div className="flex justify-center items-center mt-10 px-16 space-x-16">
+        <div className="flex justify-center items-center mt-35 px-16 space-x-16">
           {/* Left Div — Avatar Section */}
           <div className="bg-gradient-to-r from-[#d8bffa] to-[#f4ddfa] w-[1200px] h-[700px] rounded-r-[60px] flex justify-end items-right shadow-md relative right-110 bottom-9">
             <img
